@@ -28,3 +28,26 @@ const user1: Admin = {
     return 10;
   },
 };
+
+console.log(user1.startTrail());
+
+interface TakePhoto {
+  cameraMode: string;
+  filter: string;
+  brust: string;
+}
+
+interface RecordVideo {
+  startRecording(): void;
+}
+
+class Camera implements TakePhoto, RecordVideo {
+  constructor(
+    public cameraMode: string,
+    public filter: string,
+    public brust: string
+  ) {}
+  startRecording(): void {
+    console.log("recording started...");
+  }
+}
