@@ -64,3 +64,17 @@ let student: {
   isActive: false,
 };
 console.log(student);
+
+// enums
+
+enum DAYS {
+  MON,
+  TUE,
+  WED,
+  THU,
+  FRI,
+  SAT,
+  SUN,
+}
+console.log(DAYS.WED);
+console.log(DAYS);

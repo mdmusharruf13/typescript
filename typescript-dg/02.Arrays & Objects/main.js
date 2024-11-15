@@ -35,3 +35,16 @@ var student = {
     isActive: false,
 };
 console.log(student);
+// enums
+var DAYS;
+(function (DAYS) {
+    DAYS[DAYS["MON"] = 0] = "MON";
+    DAYS[DAYS["TUE"] = 1] = "TUE";
+    DAYS[DAYS["WED"] = 2] = "WED";
+    DAYS[DAYS["THU"] = 3] = "THU";
+    DAYS[DAYS["FRI"] = 4] = "FRI";
+    DAYS[DAYS["SAT"] = 5] = "SAT";
+    DAYS[DAYS["SUN"] = 6] = "SUN";
+})(DAYS || (DAYS = {}));
+console.log(DAYS.WED);
+console.log(DAYS);
