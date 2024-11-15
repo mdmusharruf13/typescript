@@ -40,3 +40,27 @@ let mush: Student = {
   skills: ["react", 99],
 };
 console.log(mush);
+
+// interfaces
+
+interface Car {
+  brand: string;
+  year: number;
+}
+
+const myCar: Car = {
+  brand: "BMW",
+  year: 2024,
+};
+console.log(myCar);
+
+// optional property
+let student: {
+  name: string;
+  isActive: boolean;
+  skills?: (string | number)[]; // optional
+} = {
+  name: "mush",
+  isActive: false,
+};
+console.log(student);

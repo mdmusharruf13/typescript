@@ -24,3 +24,14 @@ var mush = {
     skills: ["react", 99],
 };
 console.log(mush);
+var myCar = {
+    brand: "BMW",
+    year: 2024,
+};
+console.log(myCar);
+// optional property
+var student = {
+    name: "mush",
+    isActive: false,
+};
+console.log(student);
