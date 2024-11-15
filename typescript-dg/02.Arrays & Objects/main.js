@@ -1,0 +1,11 @@
+var stringArr = ["one", "two", "three"];
+var strNumArr = ["one", "two", 98];
+var mixedArr = [98, "one", true];
+mixedArr.push(99);
+console.log(mixedArr);
+mixedArr[0] = "98";
+console.log(mixedArr);
+var names = [];
+names.push("musharruf");
+names.unshift("nawaz");
+console.log(names);
