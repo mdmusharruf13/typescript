@@ -14,3 +14,29 @@ let names: string[] = [];
 names.push("musharruf");
 names.unshift("nawaz");
 console.log(names);
+
+// tuples
+let myTuple: [string, number, boolean] = ["musharruf", 98, true];
+
+let mixed = ["mush", 98, false];
+
+// myTuple = mixed; // source req-3 but target may have fewer
+
+let myObj: object;
+myObj = [];
+console.log(typeof myObj);
+myObj = mixed;
+myObj = {};
+
+type Student = {
+  name: string;
+  isActive: boolean;
+  skills: (string | number)[];
+};
+
+let mush: Student = {
+  name: "mush",
+  isActive: true,
+  skills: ["react", 99],
+};
+console.log(mush);

@@ -9,3 +9,18 @@ var names = [];
 names.push("musharruf");
 names.unshift("nawaz");
 console.log(names);
+// tuples
+var myTuple = ["musharruf", 98, true];
+var mixed = ["mush", 98, false];
+// myTuple = mixed; // source req-3 but target may have fewer
+var myObj;
+myObj = [];
+console.log(typeof myObj);
+myObj = mixed;
+myObj = {};
+var mush = {
+    name: "mush",
+    isActive: true,
+    skills: ["react", 99],
+};
+console.log(mush);
