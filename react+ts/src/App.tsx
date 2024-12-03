@@ -1,10 +1,12 @@
-import Hooks1 from "./components/Hooks1";
+// import Hooks1 from "./components/Hooks1";
+import UseReducer from "./components/UseReducer";
 
 function App() {
   return (
     <>
       <section className="app">
-        <Hooks1 />
+        {/* <Hooks1 /> */}
+        <UseReducer />
       </section>
     </>
   );
