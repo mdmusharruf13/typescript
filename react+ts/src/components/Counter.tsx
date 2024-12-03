@@ -1,16 +1,22 @@
 import { ReactNode } from "react";
+import { useCounter, useCounterText } from "../context/CounterContext";
 
 type CounterProps = {
-  setCounter: React.Dispatch<React.SetStateAction<number>>;
-  children: ReactNode;
+  children: (num: number) => ReactNode;
 };
 
-export default function Counter({ children, setCounter }: CounterProps) {
+export default function Counter({ children }: CounterProps) {
+  const { count, increment, decrement } = useCounter();
+  const { text, handleTextInput } = useCounterText();
   return (
     <>
-      <h2>{children}</h2>
-      <button onClick={() => setCounter((perv) => perv + 1)}>+</button>
-      <button onClick={() => setCounter((perv) => perv - 1)}>-</button>
+      <h2>{children(count)}</h2>
+      <div>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+      </div>
+      <input type="text" onChange={handleTextInput} />
+      <h2>{text}</h2>
     </>
   );
 }
