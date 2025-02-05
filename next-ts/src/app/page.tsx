@@ -1,7 +1,9 @@
+import User from "../../components/User";
+
 export default function Home() {
   return (
-    <>
-      <h1>Advance TypeScript Types for Next.js</h1>
-    </>
+    <section>
+      <User name="Musharruf" age={20} isStudent={true} />
+    </section>
   );
 }
