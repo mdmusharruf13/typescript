@@ -2,6 +2,7 @@
 
 import AdminInfo from "../../components/AdminInfo";
 import Counter from "../../components/Counter";
+import ElementWrapper from "../../components/ElementWrapper";
 import Employee from "../../components/Employee";
 import Form from "../../components/Form";
 import User, { Student } from "../../components/User";
@@ -31,7 +32,24 @@ export default function Home() {
         />
       </section> */}
       {/* <Counter /> */}
-      <Form />
+      {/* <Form /> */}
+      <section>
+        <ElementWrapper className="box" elementType="div">
+          <p>this is a div element with class box </p>
+        </ElementWrapper>
+        <ElementWrapper
+          elementType="h2"
+          onClick={() => console.log("clicked!!!")}
+        >
+          Header text
+        </ElementWrapper>
+        <ElementWrapper
+          elementType="button"
+          onClick={() => alert("button clicked")}
+        >
+          click me
+        </ElementWrapper>
+      </section>
     </section>
   );
 }
