@@ -1,3 +1,4 @@
+import Employee from "../../components/Employee";
 import User, { Student } from "../../components/User";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Student>
         <p>I am Next.js Developer</p>
       </Student>
+      <Employee name={"mush"} id={98} />
     </section>
   );
 }
