@@ -3,6 +3,7 @@
 import AdminInfo from "../../components/AdminInfo";
 import Counter from "../../components/Counter";
 import Employee from "../../components/Employee";
+import Form from "../../components/Form";
 import User, { Student } from "../../components/User";
 import UserInfo from "../../components/UserInfo";
 
@@ -29,7 +30,8 @@ export default function Home() {
           admin="yes"
         />
       </section> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Form />
     </section>
   );
 }
