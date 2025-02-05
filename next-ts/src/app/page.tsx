@@ -1,6 +1,10 @@
 "use client";
 
 import AdminInfo from "../../components/AdminInfo";
+import Button, {
+  primaryButtonProps,
+  secondaryButtonProps,
+} from "../../components/Button";
 import Counter from "../../components/Counter";
 import ElementWrapper from "../../components/ElementWrapper";
 import Employee from "../../components/Employee";
@@ -33,7 +37,7 @@ export default function Home() {
       </section> */}
       {/* <Counter /> */}
       {/* <Form /> */}
-      <section>
+      {/* <section>
         <ElementWrapper className="box" elementType="div">
           <p>this is a div element with class box </p>
         </ElementWrapper>
@@ -49,6 +53,10 @@ export default function Home() {
         >
           click me
         </ElementWrapper>
+      </section> */}
+      <section>
+        <Button {...primaryButtonProps} />
+        <Button {...secondaryButtonProps} />
       </section>
     </section>
   );
