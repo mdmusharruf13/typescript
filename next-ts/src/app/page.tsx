@@ -1,4 +1,7 @@
+"use client";
+
 import AdminInfo from "../../components/AdminInfo";
+import Counter from "../../components/Counter";
 import Employee from "../../components/Employee";
 import User, { Student } from "../../components/User";
 import UserInfo from "../../components/UserInfo";
@@ -6,7 +9,7 @@ import UserInfo from "../../components/UserInfo";
 export default function Home() {
   return (
     <section>
-      <User name="Musharruf" age={20} isStudent={true} />
+      {/* <User name="Musharruf" age={20} isStudent={true} />
       <Student>
         <p>I am Next.js Developer</p>
       </Student>
@@ -25,7 +28,8 @@ export default function Home() {
           location={["hyderabad", "bengalore"]}
           admin="yes"
         />
-      </section>
+      </section> */}
+      <Counter />
     </section>
   );
 }
