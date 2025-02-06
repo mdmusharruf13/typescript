@@ -12,6 +12,7 @@ import Form from "../../components/Form";
 import MyComponent from "../../components/MyComponent";
 import User, { Student } from "../../components/User";
 import UserInfo from "../../components/UserInfo";
+import { MyProvider } from "./context/CounterContext";
 import { MyContextProvider } from "./context/MyContext";
 
 export default function Home() {
@@ -61,9 +62,11 @@ export default function Home() {
         <Button {...secondaryButtonProps} />
       </section> */}
       <section>
-        <MyContextProvider>
-          <MyComponent />
-        </MyContextProvider>
+        <MyProvider>
+          <MyContextProvider>
+            <MyComponent />
+          </MyContextProvider>
+        </MyProvider>
       </section>
     </section>
   );
