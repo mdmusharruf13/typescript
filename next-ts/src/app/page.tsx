@@ -7,6 +7,7 @@ import Button, {
   secondaryButtonProps,
 } from "../../components/Button";
 import Counter from "../../components/Counter";
+import EffectComponent from "../../components/EffectComponent";
 import ElementWrapper from "../../components/ElementWrapper";
 import Employee from "../../components/Employee";
 import Form from "../../components/Form";
@@ -69,8 +70,11 @@ export default function Home() {
           </MyContextProvider>
         </MyProvider>
       </section> */}
-      <section>
+      {/* <section>
         <AdvCounter />
+      </section> */}
+      <section>
+        <EffectComponent />
       </section>
     </section>
   );
