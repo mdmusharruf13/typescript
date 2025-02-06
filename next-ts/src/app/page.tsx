@@ -9,8 +9,10 @@ import Counter from "../../components/Counter";
 import ElementWrapper from "../../components/ElementWrapper";
 import Employee from "../../components/Employee";
 import Form from "../../components/Form";
+import MyComponent from "../../components/MyComponent";
 import User, { Student } from "../../components/User";
 import UserInfo from "../../components/UserInfo";
+import { MyContextProvider } from "./context/MyContext";
 
 export default function Home() {
   return (
@@ -54,9 +56,14 @@ export default function Home() {
           click me
         </ElementWrapper>
       </section> */}
-      <section>
+      {/* <section>
         <Button {...primaryButtonProps} />
         <Button {...secondaryButtonProps} />
+      </section> */}
+      <section>
+        <MyContextProvider>
+          <MyComponent />
+        </MyContextProvider>
       </section>
     </section>
   );
