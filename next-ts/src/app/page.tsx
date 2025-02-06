@@ -1,6 +1,7 @@
 "use client";
 
 import AdminInfo from "../../components/AdminInfo";
+import AdvCounter from "../../components/AdvCounter";
 import Button, {
   primaryButtonProps,
   secondaryButtonProps,
@@ -61,12 +62,15 @@ export default function Home() {
         <Button {...primaryButtonProps} />
         <Button {...secondaryButtonProps} />
       </section> */}
-      <section>
+      {/* <section>
         <MyProvider>
           <MyContextProvider>
             <MyComponent />
           </MyContextProvider>
         </MyProvider>
+      </section> */}
+      <section>
+        <AdvCounter />
       </section>
     </section>
   );
